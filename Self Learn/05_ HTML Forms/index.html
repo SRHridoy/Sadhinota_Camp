@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+	</head>
+
+	<body>
+		<h1 style="background-color: yellow">Learing About HTML Forms</h1>
+		<br />
+
+		<form action>
+			<fieldset>
+				<legend>Basic Login Form :</legend>
+				<label for="email">Enter Username : </label>
+				<input
+					type="email"
+					id="email"
+					name="emailInput"
+					placeholder="Enter valid email"
+				/>
+				<br />
+				<br />
+				<label for="password">Enter Password :</label>
+				<input
+					type="password"
+					id="password"
+					name="passInput"
+					placeholder="More than 8 char"
+				/>
+				<br />
+				<br />
+				<input type="submit" id="submit" value="Login" />
+			</fieldset>
+		</form>
+		<br />
+		<br />
+
+		<form action="">
+			<fieldset>
+				<legend><h2>Genereal Info :</h2></legend>
+
+				<label for="dataPicker">Choose Date of Birth :</label>
+				<input type="date" id="datePicker" name="dob" />
+				<br />
+				<br />
+				<label for="city">Choose your City :</label>
+				<select name="city" id="city" multiple>
+					<option value="Rajshahi">Rajshahi</option>
+					<option value="Dhaka">Dhaka</option>
+					<option value="Dinajpur">Dinajpur</option>
+				</select>
+				<br />
+				<br />
+				<label for="religion">Choose your Islam :</label>
+				<select name="religion" id="religion">
+					<option value="Islam">Islam</option>
+					<option value="Islam">Islam</option>
+					<option value="Islam">Islam</option>
+				</select>
+				<br />
+				<br />
+				<p>Please Select your Gender :</p>
+				<input type="radio" name="gender" id="Male" />
+				<label for="Male">Male</label>
+				<br />
+				<input type="radio" name="gender" id="Female" />
+				<label for="Female">Female</label>
+				<br />
+				<br />
+				<label for="About">About yourself :</label>
+				<br />
+				<textarea
+					name="About"
+					id="About"
+					cols="15"
+					rows="2"
+					placeholder="Enter here..."
+				></textarea>
+				<br />
+				<br />
+				<button type="submit">Submit</button>
+			</fieldset>
+		</form>
+
+		<br />
+		<br />
+
+		<form action="">
+            <fieldset>
+              <legend><h2>All Types of Input:</h2></legend>
+          
+              <label for="text">Text:</label>
+              <input type="text" id="text" name="text"/>
+              <br>
+              <br>
+              <label for="button">Button:</label>
+              <input type="button" id="button" name="button" value="Submit"/>
+              <br>
+              <br>
+              <label for="checkbox">Checkbox:</label>
+              <input type="checkbox" id="checkbox" name="checkbox"/>
+              <br>
+              <br>
+              <label for="color">Color:</label>
+              <input type="color" id="color" name="color"/>
+              <br>
+              <br>
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date"/>
+              <br>
+              <br>
+              <label for="datetime-local">Date Time Local:</label>
+              <input type="datetime-local" id="datetime-local" name="datetime-local"/>
+              <br>
+              <br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email"/>
+              <br>
+              <br>
+              <input type="file" id="file" name="file"/>
+              <br>
+              <br>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password"/>
+              <br>
+              <br>
+              <label for="image">Image Button:</label>
+              <br>
+              <input type="image" id="image" name="image" src="./9259754.png" width="100px" alt="imageButton"/>
+              <br>
+              <br>
+              <label for="month">Month:</label>
+              <input type="month" id="month" name="month"/>
+              <br>
+              <br>
+              <label for="number">Number:</label>
+              <input type="number" id="number" name="number"/>
+              <br>
+              <br>
+              <label for="radio">Radio:</label>
+              <input type="radio" id="radio" name="radio"/>
+              <br>
+              <br>
+              <label for="range">Range:</label>
+              <input type="range" id="range" name="range"/>
+              <br>
+              <br>
+              <label for="submit">Submit:</label>
+              <input type="submit" id="submit" name="submit"/>
+              <br>
+              <br>
+              <label for="time">Time:</label>
+              <input type="time" id="time" name="time"/>
+              <br>
+              <br>
+              <label for="tel">Tel:</label>
+              <input type="tel" id="tel" name="tel"/>
+              <br>
+              <br>
+              
+            </fieldset>
+          </form>
+          
+	</body>
+</html>
