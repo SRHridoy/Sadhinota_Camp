@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form 1 Practice</title>
+	</head>
+	<body>
+		<h1>Event Registration</h1>
+		<br />
+		<label for="name">Name:</label>
+		<br />
+		<input type="text" name="name" id="name" />
+		<br />
+		<br />
+		<label for="email">Email:</label>
+		<br />
+		<input type="email" name="email" id="email" />
+		<br />
+		<br />
+		<label for="phone">Phone:</label>
+		<br />
+		<input
+			type="tel"
+			name="phone"
+			id="phone"
+			patter="\+880[1-9]{10}"
+			required
+		/>
+		<br />
+		<br />
+		<label for="occupation">Occupation:</label>
+		<br />
+		<select name="occupation" id="occupation">
+			<option value="Software Engineer">Software Engineer</option>
+			<option value="HR">HR</option>
+			<option value="Android Developer">Android Developer</option>
+		</select>
+		<br />
+		<br />
+		<fieldset>
+			<legend>Topics of Interest:</legend>
+			
+            <input type="checkbox" name="html" id="html" />
+            <label for="html">HTML</label>
+            <br>
+            <input type="checkbox" name="css" id="css" />
+            <label for="css">CSS</label>
+            <br>
+            <input type="checkbox" name="javascript" id="javascript" />
+            <label for="javascript">Javascript</label>
+		</fieldset>
+        <br>
+        <br>
+        <label for="textarea1">Comments:</label>
+        <br>
+        <textarea name="textarea1" id="textarea1" cols="20" rows="10"></textarea>
+
+        <input type="submit" value="Register">
+	</body>
+</html>

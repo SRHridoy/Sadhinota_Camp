@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Form</title>
+</head>
+<body>
+    <h1>Complex Form</h1>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information:</legend>
+            <label for="name">Name:</label>
+            <br>
+            <input type="text" name="name" id="name">
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" name="email" id="email">
+            <br>
+            <br>
+            <label for="phone">Phone:</label>
+            <br>
+            <input type="tel" name="phone" id="phone">
+            <br>
+            <br>
+            <label for="dob">Date of Birth:</label>
+            <br>
+            <input type="date" name="dob" id="dob">
+            <br>
+            <br>
+            <label for="gender">Gender:</label>
+            <br>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <br>
+            <br>
+            <label for="country">Country:</label>
+            <br>
+            <select name="country" id="country">
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Pakisthan">Pakisthan</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+            </select>
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Address Street:</legend>
+            <label for="Street">Street:</label>
+            <input type="text" name="Street" id="Street">
+            <br><br>
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city">
+            <br><br>
+            <label for="zipCode">ZIP Code:</label>
+            <input type="text" name="zipCode" id="zipCode">
+            <br><br>
+
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Other Information:</legend>
+
+            <label for="comments">Comments</label>
+            <br>
+            <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
+            <label for="terms">I agree to the terms of service</label>
+            <input type="checkbox" name="terms" id="terms">
+        </fieldset>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

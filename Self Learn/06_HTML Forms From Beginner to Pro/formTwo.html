@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form2 Practice</title>
+	</head>
+	<body>
+		<h1>Job Application</h1>
+
+		<label for="name">Name:</label>
+		<br />
+		<input type="text" name="name" id="name" />
+		<br />
+		<br />
+		<label for="email">Email:</label>
+		<br />
+		<input type="email" name="email" id="email" />
+		<br />
+		<br />
+		<label for="phone">Phone:</label>
+		<br />
+		<input type="tel" name="phone" id="phone" />
+		<br />
+		<br />
+		<label for="file">Resume:</label>
+		<br />
+		<input type="file" name="file" id="file" />
+		<br />
+		<br />
+		<label for="experience">Experience(years):</label>
+		<input
+			type="number"
+			name="experience"
+			id="experience"
+			max="20"
+			min="1"
+		/>
+		<br />
+		<br />
+		<fieldset>
+			<legend>Skills</legend>
+			<input type="checkbox" name="html" id="html" />
+			<label for="html">HTML</label>
+			<br />
+			<br />
+			<input type="checkbox" name="css" id="css" />
+			<label for="css">CSS</label>
+			<br />
+			<br />
+			<input type="checkbox" name="js" id="js" />
+			<label for="js">JavaScript</label>
+		</fieldset>
+		<br />
+		<br />
+		<label for="nameOfDegree">Name of the Degree:</label>
+        <br>
+		<select name="nameOfDegree" id="nameOfDegree">
+			<option value="B.Sc.(Eng.) in CSE">B.Sc.(Eng.) in CSE</option>
+			<option value="B.Sc.(Eng.) in ECE">B.Sc.(Eng.) in ECE</option>
+			<option value="B.Sc.(Eng.) in EEE">B.Sc.(Eng.) in EEE</option>
+		</select>
+		<br />
+		<br />
+
+        <fieldset>
+            <legend>Availability:</legend>
+            <input type="radio" name="availabillity" id="fullTime">
+            <label for="fullTime">Full-time</label>
+            <br>
+            <input type="radio" name="availabillity" id="partTime">
+            <label for="partTime">Part-time</label>
+            <br>
+            <input type="radio" name="availabillity" id="remote">
+            <label for="remote">Remote</label>
+            <br>
+        </fieldset>
+        <br>
+        <br>
+        <label for="comment">Additional Comments:</label>
+        <br>
+        <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
+        <input type="button" value="Submit Application">
+	</body>
+</html>
