@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>
+			Mastering CSS Position Property Static, Relative, Absolute, Fixed,
+			and Sticky
+		</title>
+		<style>
+			img {
+				width: 300px;
+				height: 3 00px;
+				margin: 10px;
+                box-sizing: border-box;
+			}
+
+		    .container {
+                height: 1000px;
+                background-color: bisque;
+				border: 1px solid black;
+                position: relative;
+			}
+            .img2{
+                position: relative;
+                top: 100px; 
+                /* left: 100px;
+                /* position: absolute; */
+            }
+            .img3{
+                    position: absolute;
+                    top: 50px;
+                    right: 650px;
+            }
+            .img4{
+                position: sticky;
+                top: 10px;
+            }
+
+            .img5{
+                position: fixed;
+            }
+            .test{
+                height: 1000px;
+                background-color: aquamarine;
+            }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<img class="img1" src="./img/one.png" alt="" />
+			<img class="img2" src="./img/two.png" alt="" />
+			<img class="img3" src="./img/three.png" alt="" />
+			<img class="img4" src="./img/four.png" alt="" />
+            <img class="img5" src="./img/five.png" alt="">
+		</div>
+        <div class="test"></div>
+	</body>
+</html>
