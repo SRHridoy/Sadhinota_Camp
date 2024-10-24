@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Test</title>
+
+		<style>
+			.box {
+				width: 80vh;
+				margin: 0 auto;
+				border-bottom: 2px solid black;
+                /* Ekhane odd dile oikhane odd+1 dilei overlap hosse but ekhane even dile overlap e hosse nah... */
+				padding-bottom: 21px;
+                /* padding-bottom: 20px; */
+                box-sizing: border-box;
+			}
+			.tab-wrapper {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.tab-wrapper a {
+				text-decoration: none;
+				color: darksalmon;
+			}
+
+			.tab-wrapper a:first-child {
+				color: dodgerblue;
+				border-bottom: 2px solid dodgerblue;
+                margin-bottom: -22px;
+    
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="tab-wrapper">
+				<a href="#">Sustainability</a>
+				<a href="#">Comfort</a>
+				<a href="#">Durability</a>
+				<a href="#">Versatility</a>
+			</div>
+		</div>
+	</body>
+</html>

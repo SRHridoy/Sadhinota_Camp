@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units - px, rem, em, vh, vw, % and more </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            background-color: dodgerblue;
+            color: white;
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            border: 2px solid black;
+        }
+        .first-div{
+            margin-top: 20px;
+        }
+        .container{
+            height: 70vh;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        span{
+            background-color: yellow;
+            color: red;
+            /* In inline width doesn't work, and so margin auto */
+            /* width: 80vh;
+            margin: auto; */
+        }
+
+        .box-1{
+            width: 80%;
+            height: 80%;
+            margin: 20px auto;
+            border: 2px solid green;
+        }
+        .box-2{
+            width: 50%;
+            height: 50%;
+            border: 2px solid white;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="first-div">This is div and it's a block element...</div>
+    <div class="container"><div class="box-1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, molestias praesentium. Velit reiciendis explicabo similique. E
+        <div class="box-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, aperiam.</div>
+    </div></div>
+    <span>This is span and a inline element...</span>
+</body>
+</html>

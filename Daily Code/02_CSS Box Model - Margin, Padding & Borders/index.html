@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box-model</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section{
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            padding: 10px;
+            margin: 20px;
+            box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.37);
+        }
+        
+        .box{
+            margin: 10px;
+            padding: 10px;
+            height: 200px;
+            background-color: aqua;
+            text-align: justify;
+            display: flex;
+            align-items: center;
+            border: 2px solid black;
+        }
+        .box1{
+            color: rgb(15, 11, 11);
+            width: 50%;
+        }
+
+        .box2{
+            width: 50%;
+            color: rgb(21, 16, 25);
+        }
+    </style>
+
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="box box1">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt enim illo quasi culpa alias et eligendi tempora aspernatur repudiandae doloremque.
+                </p>
+            </div>
+        
+            <div class="box box2">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam doloremque in maiores quaerat soluta neque. Beatae eum nostrum incidunt explicabo magni facilis aliquam id! Labore!
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.card-section{
+    width: 25%;
+    margin: 10vh auto;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 4px 4px 15px rgba(220, 20, 60, 0.742);
+}
+
+.card-wrapper{
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.img-wrapper {
+    position: relative;
+    width: 350px;  /* Match the width of the image */
+    height: 250px; /* Match the height of the image */
+}
+
+.img-wrapper img:first-child {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.img-wrapper img:nth-child(2) {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 60px;
+    height: 60px;
+}
+
+.heading-description-wrapper{
+    padding-bottom: 25px;
+}
+
+.heading-description-wrapper h1{
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: crimson;
+    text-align: center;
+}
+
+.heading-description-wrapper p{
+    color: gray;
+    text-align: center;
+}
+
+.quantity-button-wrapper{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+    border: 1px solid crimson;
+    width: fit-content;
+    padding: 4px 40px;
+    border-radius: 8px;
+
+}
+
+.quantity-button-wrapper i:first-child{
+    color: gray;
+}
+
+.add-to-cart-button{
+    width: 100%;
+    padding-top: 50px;
+}
+.add-to-cart-button button{
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: crimson;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 4px 4px 15px rgba(220, 20, 60, 0.742);
+}

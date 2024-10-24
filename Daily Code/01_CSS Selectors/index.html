@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Selectors</title>
+		<style>
+			/* Element Selector */
+			h1 {
+				background-color: violet;
+			}
+			/* Class Selector */
+			.red-color {
+				color: red;
+			}
+
+			/* ID Selector */
+			#boss-ami {
+				color: white;
+			}
+
+			/* Child Selector */
+			div > p {
+				color: yellow;
+			}
+
+			/* Descendant Selector */
+			div p {
+				background-color: gray;
+			}
+
+			/* Universal Selector */
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			/* Pseudo Selector */
+			a:visited {
+				color: yellow;
+			}
+            a:link{
+                color: green;
+            }
+            a:active{
+                background-color: red;
+            }
+            a:hover{
+                background-color: blue;
+            }
+
+            /* First Child */
+            p:first-child{
+                background-color: aqua;
+            }
+            
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1 id="boss-ami">I am H1</h1>
+			<h2 class="red-color">Hey Bro.</h2>
+			<h3 class="red-color">Hello Boss</h3>
+		</header>
+		<main>
+            <section>
+                <p>I am first</p>
+                <p>I am second</p>
+            </section>
+			<div>
+				<p>Hello I am p and child of div</p>
+				<p>Hello I am p and child of div</p>
+				<article>
+					<p>Hello I am P and child of article</p>
+					<p>Hello I am P and child of article</p>
+				</article>
+			</div>
+
+			<a href="https://www.google.com">Google</a>
+			<a href="https://www.facebook2.com">Facebook</a>
+		</main>
+	</body>
+</html>
