@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding: var(--def-padding);</title>
+
+    <style>
+        body{
+            background-color: tomato;
+        }
+        .boxes{
+            /* width: 7vw;
+            height: 70vh; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            margin: 3px;
+            padding: 3px;
+            border: 2px solid black;
+        }
+
+        @media only screen and (max-width: 455px){
+            body{
+                background-color: blue;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
