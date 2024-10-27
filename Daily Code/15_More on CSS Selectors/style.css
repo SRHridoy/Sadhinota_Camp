@@ -1,0 +1,47 @@
+/* .box:first-child{
+    background-color: rebeccapurple;
+} */
+
+/* .box:first-line{
+    background-color: tomato;
+} */
+
+/* .boxes *{
+    border: 2px solid black;
+} */
+
+/* p,a,.box,[data-color = "primary"]{
+    margin-top: 20px;
+} */
+
+/* .box:nth-child(even){
+    background-color: red;
+} */
+
+/* .box:nth-last-child(1){
+    background-color: red;
+} */
+
+.boxes::before{
+    content: "I am Hridoy";
+    background-color: dodgerblue;
+}
+
+.boxes::after{
+    content: "I am learning WEB DEV...";
+    background-color: orangered;
+}
+
+::selection{
+    color: orangered;
+    background-color: black;
+}
+
+.box::first-letter{
+    color: peru;
+    font-size: 30px;
+}
+
+input::placeholder{
+    color: lightgray;
+}
