@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", serif;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+#login-section {
+	width: 100vw;
+	height: 100vh;
+	background-image: url("assets/imgs/bg_for_login.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.login-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	backdrop-filter: blur(20px);
+	border: 2px solid white;
+	border-radius: 12px;
+	padding: 20px 0px 20px;
+}
+
+.login-wrapper h1 {
+	font-size: 32px;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+	padding: 15px;
+}
+
+.input-wrapper {
+	padding: 10px 30px;
+	display: flex;
+	align-items: center;
+}
+.input-wrapper i {
+	color: white;
+	position: absolute;
+	right: 10%;
+}
+.input-wrapper input {
+	background-color: transparent;
+	padding: 10px;
+	border: none;
+	width: 300px;
+	color: white;
+	outline-color: white;
+	border-bottom: 2px solid white;
+}
+
+.input-wrapper input::placeholder {
+	color: white;
+}
+
+/* .input-wrapper input:focus{
+        outline-color: dodgerblue;
+        border-color: dodgerblue; 
+        border: none;
+
+    } */
+
+.rem-forget-pass-wrapper {
+	padding: 20px 15px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: white;
+	font-size: 12px;
+}
+
+.remember-password-wrapper {
+	padding: 0px 15px;
+}
+
+.rem-forget-pass-wrapper p {
+	padding: 0px 15px;
+}
+
+.login-btn-wrapper {
+	padding: 5px 30px 5px;
+}
+
+.login-btn-wrapper input {
+	width: 100%;
+	font-weight: bold;
+	padding: 6px;
+	border: none;
+	border-radius: 50px;
+	background: linear-gradient(145deg, #cacaca, #f0f0f0);
+	box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.login-btn-wrapper input:hover {
+	border-radius: 50px;
+	background: #e0e0e0;
+	box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    cursor: pointer;
+}
+
+.bottom-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	font-size: 12px;
+	color: white;
+	padding: 15px 30px 20px;
+}
+
+.bottom-wrapper a {
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
