@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box-one{
+    background-color: blueviolet;
+    width: 500px;
+    height: 500px;
+    border: 2px solid red;
+
+    /* padding: 20px; */
+    /* top right bottom left */
+    /* padding: 25px 50px 30px 50px; */
+
+    /* top left-right bottom */
+    padding: 25px 50px 30px;
+
+    margin: 50px;
+
+
+}
+.box-two{
+    background-color: blueviolet;
+    width: 500px;
+    height: 500px;
+    border: 2px solid red;
+
+    padding: 25px 50px 30px;
+
+    margin: 70px 50px 50px;
+
+
+}
