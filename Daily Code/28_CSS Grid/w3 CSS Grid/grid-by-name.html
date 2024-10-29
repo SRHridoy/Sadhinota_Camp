@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>W3 CSS Grid</title>
+
+		<style>
+			.grid-container {
+				display: grid;
+				background-color: crimson;
+				grid-template-areas: 
+                'header header header header header'
+                'menu main main main right'
+                'menu footer footer footer footer'
+                ;
+                padding: 10px;
+                gap: 10px;
+                /* height: 100vh; */
+			}
+            .grid-item{
+                background-color: white;
+                padding: 20px 0;
+                text-align: center;
+                font-size: 30px;
+            }
+            .item-1{
+                grid-area: header;
+            }
+            .item-2{
+                grid-area: menu;
+            }
+            .item-3{
+                grid-area: main;
+            }
+            .item-4{
+                grid-area: right;
+            }
+            .item-5{
+                grid-area: footer;
+            }
+
+            @media only screen and (min-width:500px) {
+                .grid-item{
+                    grid-area: auto;
+                }
+            }
+
+		</style>
+	</head>
+	<body>
+		<div class="grid-container">
+			<div class="grid-item item-1">1</div>
+			<div class="grid-item item-2">2</div>
+			<div class="grid-item item-3">3</div>
+			<div class="grid-item item-4">4</div>
+			<div class="grid-item item-5">5</div>
+		</div>
+	</body>
+</html>

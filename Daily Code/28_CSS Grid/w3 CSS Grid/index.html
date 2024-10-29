@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>W3 CSS Grid</title>
+
+		<style>
+			.grid-container {
+				display: grid;
+				background-color: crimson;
+				height: 800px;
+				/* column-gap: 30px;
+                row-gap: 30px; */
+
+				/* gap: 30px 50px; */
+
+				gap: 50px;
+				grid-template-columns: [first-col]auto [sec-col]auto [third-col]auto;
+				/* grid-template-rows: auto auto auto auto; */
+				/* padding: 50px;
+                align-items: center; */
+
+				/* justify-content: center; */
+				/* justify-items:center; */
+				align-content: center;
+			}
+
+			.grid-item {
+				background-color: yellow;
+				text-align: center;
+				padding: 20px 0;
+				width: 100%;
+			}
+
+			.item-1 {
+				/* grid-column-start: 1;
+				grid-column-end: 2; */
+				grid-column: first-col/third-col;
+			}
+
+			.item-2 {
+				/* grid-row-start: 2;
+                grid-row-end: 4; */
+
+				grid-row: 2/4;
+			}
+
+			.item-7 {
+                grid-column-start: 3;
+				grid-row: 3/span 2;
+			}
+
+            .item-4{
+                grid-area: 2/2/5/3;
+            }
+		</style>
+	</head>
+	<body>
+		<div class="grid-container">
+			<div class="grid-item item-1">1</div>
+			<div class="grid-item item-2">2</div>
+			<div class="grid-item item-3">3</div>
+			<div class="grid-item item-4">4</div>
+			<div class="grid-item item-5">5</div>
+			<div class="grid-item item-6">6</div>
+			<div class="grid-item item-7">7</div>
+			<div class="grid-item item-8">8</div>
+			<div class="grid-item item-9">9</div>
+		</div>
+	</body>
+</html>
