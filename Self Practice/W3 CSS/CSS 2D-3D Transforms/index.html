@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 2D Transforms</title>
+
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            margin: 0 auto;
+            width: 70vw;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: crimson;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            /* transform: translate(20%,20%); */
+            /* transform: rotate(45deg); */
+            /* transform: rotate(-45deg); */
+            /* transform: scale(.5); */
+            /* transform: scale(3,1); */
+            /* transform: scaleX(2);
+            transform: scaleY(2); */
+            /* scale or rotate at a time one */
+            /* Scale emneo kaj kore */
+            /* scale: 1.5; */ 
+        }
+
+        .box2{
+            /* transform: skewY(20deg); */
+            transform: matrix(1, -0.3, 0, 1, 0, 0);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+        <div class="box box2">BOX</div>
+    </div>
+
+</body>
+</html>
