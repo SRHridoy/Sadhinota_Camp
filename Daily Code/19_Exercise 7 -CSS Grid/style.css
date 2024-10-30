@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.nav-bar-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.nav-bar-wrapper img {
+	width: 170px;
+}
+
+.right-item-wrapper {
+	width: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.right-item-wrapper a {
+	color: rgb(94, 91, 91);
+	text-decoration: none;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	color: rgb(94, 91, 91);
+}
+
+.language-icon,
+.search-icon {
+	font-size: 20px;
+}
+
+.search-icon {
+	font-size: 18px;
+	rotate: 90deg;
+	color: rgb(94, 91, 91);
+}
+
+/* main start */
+.container {
+    margin: 60px auto;
+	display: grid;
+    width: 70vw;
+	height: 70vh;
+	grid-template-columns: auto auto auto;
+    gap: 20px;
+    
+}
+
+.item-grid{
+    width: 100%;
+    height: 150px;
+    background-color: aliceblue;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 'lng lng lng lng'
+    'left left right right';
+    justify-items: center;
+    align-items: center;
+
+}
+
+.item-grid h3{
+    grid-area: lng;
+    font-size: 22px;
+}
+
+.item-grid a{
+    padding: 8px;
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.item-grid a:nth-child(2){
+    grid-area: left;
+    background-color: dodgerblue;
+}
+
+.item-grid a:nth-child(3){
+    grid-area: right;
+    background-color: crimson;
+}
+
+/* main end */

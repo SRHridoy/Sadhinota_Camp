@@ -33,7 +33,6 @@ body {
 	background-color: var(--body-bgc);
 }
 
-
 .nav-bar-wrapper {
 	width: 100%;
 	display: flex;
@@ -41,14 +40,37 @@ body {
 	justify-content: space-around;
 	background-color: var(--nav-bgc);
 	padding: 15px;
-    position: sticky;
+	position: sticky;
 	top: 0;
 }
 
-.nav-bar-wrapper i {
+
+
+/* .icon-wrapper {
+	position: relative;
+	overflow: hidden;
+} */
+
+.icon-wrapper i {
 	color: var(--icon-color);
 	font-size: 30px;
+	transition: 0.5s;
+	position: relative;
 }
+
+/* .icon-wrapper i::after {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 100%;
+	background-color:rgba(255, 255, 255, 0.306);
+	transform: translateX(-6rem) skewX(30deg);
+	transition: 0.75s ease-in-out;
+}
+
+.icon-wrapper i:hover::after {
+	transform: translateX(2rem) skewX(30deg);
+} */
 
 .nav-bar-wrapper a {
 	text-decoration: none;
@@ -101,8 +123,8 @@ body {
 	justify-content: center;
 	margin: 50px auto;
 	padding: 60px;
-    background-color: black;
-    z-index: 1;
+	background-color: black;
+	z-index: 1;
 }
 
 .hero-wrapper {
@@ -111,51 +133,50 @@ body {
 	padding: 20px;
 	border-radius: 40px;
 	position: relative;
-    z-index: 2;
+	z-index: 2;
 	/* left: 50%; */
 	/* transform: translateX(-50%); */
 }
 
-
-
 /* Animation part starts */
-@property --angle{
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
+@property --angle {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
 }
 
-.hero-wrapper::after,.hero-wrapper::before {
-    /* --angle: 0deg; */
+.hero-wrapper::after,
+.hero-wrapper::before {
+	/* --angle: 0deg; */
 	content: "";
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	/* background-color: red; */
-    background-image: conic-gradient(from var(--angle), transparent 70%,blue);
+	background-image: conic-gradient(from var(--angle), transparent 70%, blue);
 	top: 50%;
-    left: 50%;
+	left: 50%;
 	translate: -50% -50%;
-    /* transform: translate(-50%,-50%); */
+	/* transform: translate(-50%,-50%); */
 	z-index: -1;
-    padding: 3px;
-    border-radius: 40px;
-    animation: 3s spin linear infinite;
+	padding: 3px;
+	border-radius: 40px;
+	animation: 3s spin linear infinite;
 }
 
-.hero-wrapper::before{
-    filter: blur(1.5rem);
-    opacity: 0.5;
+.hero-wrapper::before {
+	filter: blur(1.5rem);
+	opacity: 0.5;
 }
 
-@keyframes spin{
-    from{
-        --angle: 0deg;
-    }
+@keyframes spin {
+	from {
+		--angle: 0deg;
+	}
 
-    to{
-        --angle: 360deg;
-    }
+	to {
+		--angle: 360deg;
+	}
 }
 /* Animation part ends */
 
@@ -183,7 +204,7 @@ body {
 	background-color: var(--hover-color);
 }
 
-.social-icon-wrapper {
+.social-icon-wrapper,.copywrite-wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -201,4 +222,11 @@ body {
 .social-icon-wrapper i:hover {
 	color: var(--hover-color);
 	cursor: pointer;
+}
+
+
+.copywrite-wrapper{
+	color: rgba(255, 255, 255, 0.662);
+	font-weight: 300;
+	font-size: 12px;
 }
